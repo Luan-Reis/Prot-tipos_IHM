@@ -1,0 +1,66 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0 20px;
+}
+header a{
+    margin-left: 95%;
+}
+h1{
+    text-align: center;
+    font-size: 64px;
+}
+.table-horarios{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+.table-horarios th{
+    background-color: #eff7f8;
+    border:  solid 1.5px black;
+    padding: 15px;
+}
+
+.table-horarios td{
+    border: solid 1px black;
+    text-align: center;
+    padding: 10px;
+}
+
+.table-avisos{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+.table-avisos th{
+    background-color: #eff7f8;
+    border:  solid 1.5px black;
+    padding: 15px;
+}
+
+.table-avisos td{
+    border: solid 1px black;
+    text-align: center;
+    padding: 10px;
+}
+
+.table-dicussoes{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+.table-dicussoes th{
+    background-color: #eff7f8;
+    border:  solid 1.5px black;
+    padding: 15px;
+}
+
+.table-dicussoes td{
+    border: solid 1px black;
+    text-align: center;
+    padding: 10px;
+}
