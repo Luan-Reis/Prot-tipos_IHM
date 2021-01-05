@@ -1,0 +1,16 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo {
+    text-align: center;
+    font-size: 64px;
+    color: #198754;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.form-disc{
+    margin: 0 400px;
+}
+.btn-disc{
+    margin-left: 855px;
+}

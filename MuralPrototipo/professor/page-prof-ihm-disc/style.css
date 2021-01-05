@@ -1,0 +1,35 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo{
+    text-align: center;
+    font-size: 64px;
+    color: #198754;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+button {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+th{
+    background-color: #198754;
+    border:  solid 1.5px #fff;
+    color: #fff;
+    padding: 15px;
+}
+
+td{
+    background-color: #fff;
+    border: solid 1px #198754;
+    color: #198754;
+    text-align: center;
+    padding: 10px;
+}

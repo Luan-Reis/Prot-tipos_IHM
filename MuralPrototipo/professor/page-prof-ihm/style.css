@@ -1,0 +1,106 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo{
+    text-align: center;
+    font-size: 64px;
+    color: #198754;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.table-horarios{
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+.table-horarios th{
+    background-color: #198754;
+    border:  solid 1.5px #fff;
+    color: #fff;
+    padding: 15px;
+}
+
+.table-horarios td{
+    background-color: #fff;
+    border: solid 1px #198754;
+    color: #198754;
+    text-align: center;
+    padding: 10px;
+}
+
+.table-avisos{
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+.table-avisos th{
+    background-color: #198754;
+    border:  solid 1.5px #fff;
+    color: #fff;
+    padding: 15px;
+}
+.btn-disc{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color:  #198754;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid
+    transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-light-disc {
+    color: #198754;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.btn-light-disc:hover {
+    color: #198754;
+    background-color: #f9fafb;
+    border-color: #f9fafb;
+}
+
+.table-avisos td{
+    background-color: #fff;
+    border: solid 1px #198754;
+    color: #198754;
+    text-align: center;
+    padding: 10px;
+}
+
+.table-dicussoes{
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+.table-dicussoes th{
+    background-color: #198754;
+    border:  solid 1.5px #fff;
+    color: #fff;
+    padding: 15px;
+}
+
+.table-dicussoes td{
+    background-color: #fff;
+    border: solid 1px #198754;
+    color: #198754;
+    text-align: center;
+    padding: 10px;
+}
