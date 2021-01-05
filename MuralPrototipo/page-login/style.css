@@ -11,3 +11,9 @@ html {
 .card {
     margin-left: 500px;
 }
+.div-login-aluno{
+    float: left;
+}
+.div-login-professor{
+    float: right;
+}

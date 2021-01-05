@@ -1,19 +1,23 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
-.titulo {
+.titulo{
     text-align: center;
     font-size: 64px;
     color: #198754;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.form-disc{
-    margin: 0 200px;
-}
-.btn-disc{
+.btn-disc {
     width: 30%;
+}
+.btn-edit{
+    display: inline-block;
+    margin-left: 450px;
+    width: 80%;
     font-size: 24px;
     margin-top: 10px;
-    margin-left: 500px;
+}
+.sec-form{
+    margin: 30px 200px;
 }

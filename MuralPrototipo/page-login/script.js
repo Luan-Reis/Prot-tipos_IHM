@@ -5,7 +5,7 @@ function entrar(){
 
     if(area1 == 'Aluno'){
         if(area2 == 'senha'){
-            window.location.href='../../aluno/page-main/index.html'
+            window.location.href='../aluno/page-main/index.html'
         }
         else{
             alert('Login ou senha incorretos!')
@@ -14,7 +14,7 @@ function entrar(){
     else{
         if(area1 == 'Professor'){
             if(area2 == 'senha'){
-                window.location.href='../../professor/page-main-prof/index.html'
+                window.location.href='../professor/page-main-prof/index.html'
             }
             else{
                 alert('Login ou senha incorretos!')
