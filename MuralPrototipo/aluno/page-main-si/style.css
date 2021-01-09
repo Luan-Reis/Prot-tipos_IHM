@@ -1,6 +1,9 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+button{
+    width: 100%;
+}
 .titulo{
     text-align: center;
     font-size: 64px;
