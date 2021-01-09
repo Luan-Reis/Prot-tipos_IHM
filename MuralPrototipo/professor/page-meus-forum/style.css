@@ -1,6 +1,10 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+.btn-back{
+    margin: 10px 5px;
+    width: auto;
+}
 .titulo{
     text-align: center;
     font-size: 64px;
@@ -8,16 +12,15 @@ html {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-button{
+.titulo2{
+    text-align: center;
+    font-size: 32px;
+    color: #198754;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+button {
     width: 100%;
-}
-.btn-disc {
-    width: 30%;
-}
-.btn-edit{
-    display: inline-block;
-    margin-left: 400px;
-    width: 60%;
     font-size: 24px;
     margin-top: 10px;
 }
@@ -41,8 +44,8 @@ td{
     text-align: center;
     padding: 10px;
 }
-.sec-form{
-    margin: 30px 100px;
+.btns{
+    display: flex;
 }
 a:link {
     text-decoration: none;

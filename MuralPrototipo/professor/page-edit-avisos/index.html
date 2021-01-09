@@ -16,6 +16,8 @@
 
         <script src="../../sweetalert/sweetalert.js"></script>
 
+        <script src="https://kit.fontawesome.com/eb0007fc1a.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <header>
@@ -24,14 +26,16 @@
                     <a href="../page-perfil/index.html">Perfil</a>
                   <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fas fa-search"></i> Pesquisar</button>
                   </form>
                 </div>
               </nav>
         </header>
 
         <button type="button" class="btn btn-success btn-back"
-        onclick="window.location.href='../page-prof-ihm/index.html'">Voltar à página anterior</button>
+        onclick="window.location.href='../page-prof-ihm/index.html'">
+        <i class="fas fa-arrow-left"></i> Voltar à página anterior</button>
 
         <section class="sec-form">
             <h1 class="titulo">Editar Aviso</h1>
@@ -110,19 +114,19 @@
             function excluir(){
                 Swal.fire({
                 title: 'Você tem certeza?',
-                text: "Este Aviso vai ser deletado!",
+                text: "Este Aviso vai ser excluído!",
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: 'Sim, deleta ele!',
+                confirmButtonText: 'Sim, exclui ele!',
                 cancelButtonText: 'cancelar'
                 }).then((result) => {
                     if (result.isConfirmed) {
                         Swal.fire({
                         position: 'top',
                         icon: 'success',
-                        title: 'Aviso Deletado',
+                        title: 'Aviso excluído',
                         showConfirmButton: false,
                         timer: 1000
                         })

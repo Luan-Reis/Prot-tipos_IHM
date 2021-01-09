@@ -16,7 +16,7 @@ button{
 }
 .btn-edit{
     display: inline-block;
-    margin-left: 450px;
+    margin-left: 400px;
     width: 60%;
     font-size: 24px;
     margin-top: 10px;
@@ -43,4 +43,10 @@ td{
 }
 .sec-form{
     margin: 30px 100px;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }

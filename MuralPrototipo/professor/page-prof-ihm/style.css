@@ -1,6 +1,9 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+button{
+    width: 100%;
+}
 .btn-back{
     margin: 10px 5px;
     width: auto;
@@ -73,6 +76,7 @@ html {
     color: #198754;
     background-color: #f8f9fa;
     border-color: #f8f9fa;
+    margin-left: 3px;
 }
 .btn-light-disc:hover {
     color: #198754;
@@ -107,4 +111,14 @@ html {
     color: #198754;
     text-align: center;
     padding: 10px;
+}
+.btn-table{
+    display: flex;
+    width: auto;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
