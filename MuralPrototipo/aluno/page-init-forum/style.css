@@ -9,15 +9,15 @@ html {
     margin-bottom: 30px;
 }
 .form-disc{
-    margin: 0 400px;
+    margin: 0 200px;
 }
 .btn-disc {
-    width: 20%;
+    width: 30%;
 }
 .btn-edit{
     display: inline-block;
     margin-left: 500px;
-    width: 80%;
+    width: 60%;
     font-size: 24px;
     margin-top: 10px;
 }
