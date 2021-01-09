@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser 
+renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Enok">
+
+        <script src="teste/teste.js"></script>
+
+    </head>
+    <body>
+        <h1>Estrutura básica</h1>
+        <script type="text/javascript">
+        function teste(){
+            Swal.fire({
+            title: 'Você tem certeza?',
+            text: "Esse Aviso vai ser deletado!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sim, deleta ele!',
+            cancelButtonText: 'cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                    position: 'top',
+                    icon: 'success',
+                    title: 'Deletado',
+                    showConfirmButton: false,
+                    timer: 1000
+                    })
+                    function abrirPag(){
+                        window.location.href='index.html'
+                    }
+                    setTimeout(abrirPag, 1000)
+                }
+            })
+        }
+        </script>
+
+        <button type="button" onclick="teste()">Teste</button>
+
+    </body>
+</html>
