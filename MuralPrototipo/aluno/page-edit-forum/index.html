@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Mural</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Prototipos">
+
+        <link href="style.css" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+        crossorigin="anonymous">
+
+        <script src="../../sweetalert/sweetalert.js"></script>
+
+        <script src="https://kit.fontawesome.com/eb0007fc1a.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <a href="../page-perfil/index.html">Perfil</a>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fas fa-search"></i>Pesquisar</button>
+                  </form>
+                </div>
+              </nav>
+        </header>
+
+        <button type="button" class="btn btn-primary btn-back"
+        onclick="window.location.href='../page-meus-forum/index.html'">
+        <i class="fas fa-arrow-left"></i> Voltar à página anterior</button>
+
+        <section class="sec-form">
+            <h1 class="titulo">Editar Discussão</h1>
+            <div class="form-disc">
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Título:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="exampleInputEmail1" required 
+                        placeholder="Campo Título não pode estar vazio"
+                        aria-describedby="emailHelp" value="Atividade Teórica 3">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Descrição:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" required
+                        placeholder="Campo Descreição não pode estar vazio"
+                        rows="3">Figma é uma ferramenta que pode ser usada para criar Protótipos  </textarea>
+                    </div>
+                </div>
+                <!-- <div class="mb-3 row">
+                    <label for="formFile" class="col-sm-2 col-form-label">Selecionar Arquivo:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <div class="btn-edit">
+            <button type="button" class="btn btn-danger btn-disc"
+            onclick="excluir()">Excluir Discussão</button>
+            <button type="button" class="btn btn-primary btn-disc"
+            onclick="incluir()">Alterar Discussão</button>
+        </div>        
+
+        <script type="text/javascript">
+            function incluir(){
+                var area1 = document.getElementById('exampleInputEmail1').value;
+                var area2 = document.getElementById('exampleFormControlTextarea1').value;
+
+                if(area1 == '' || area1 == null){
+                    // alert('Aviso precisa de um título')
+                }
+                else{
+                    if(area2 == '' || area2 == null){
+                        // alert('Aviso precisa de uma descrição')
+                    }
+                    else{
+                        Swal.fire({
+                        title: 'Esta Discussão vai ser alterada!',
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Alterar!',
+                        cancelButtonText: 'cancelar'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                Swal.fire({
+                                position: 'top',
+                                icon: 'success',
+                                title: 'Discussão Alterada',
+                                showConfirmButton: false,
+                                timer: 1000
+                                })
+                                function abrirPag(){
+                                    window.location.href='../page-meus-forum/index.html'
+                                }
+                                setTimeout(abrirPag, 1000)
+                            }
+                        })
+                    }
+                }
+            }
+
+            function excluir(){
+                Swal.fire({
+                title: 'Você tem certeza?',
+                text: "Esta Discussão vai ser excluída!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Sim, exclui ela!',
+                cancelButtonText: 'cancelar'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                        position: 'top',
+                        icon: 'success',
+                        title: 'Discussão excluída',
+                        showConfirmButton: false,
+                        timer: 1000
+                        })
+                        function abrirPag(){
+                            window.location.href='../page-meus-forum/index.html'
+                        }
+                        setTimeout(abrirPag, 1000)
+                    }
+                })
+            }
+        </script>
+
+    </body>
+</html>

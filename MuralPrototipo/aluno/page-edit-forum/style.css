@@ -15,14 +15,16 @@ button{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.lista-disciplinas{
-    list-style: none;
-    display: block;
-    padding: 0;
-    margin: 0 50px;
+.btn-disc {
+    width: 20%;
 }
-.lista-disciplinas button{
-    width: 100%;
-    font-size: 50px;
+.btn-edit{
+    display: inline-block;
+    margin-left: 500px;
+    width: 60%;
+    font-size: 24px;
     margin-top: 10px;
+}
+.sec-form{
+    margin: 30px 200px;
 }

@@ -35,3 +35,9 @@ td{
     /* text-align: center; */
     padding: 10px;
 }
+a:link {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

@@ -15,6 +15,9 @@
         crossorigin="anonymous">
 
         <script src="../../sweetalert/sweetalert.js"></script>
+
+        <script src="https://kit.fontawesome.com/eb0007fc1a.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <header>
@@ -23,13 +26,15 @@
                     <a href="../../index.html">Entrar</a>
                   <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fas fa-search"></i> Pesquisar</button>
                   </form>
                 </div>
               </nav>
         </header>
         <button type="button" class="btn btn-primary btn-back"
-        onclick="window.location.href='../page-si-ihm/index.html'">Voltar à página anterior</button>
+        onclick="window.location.href='../page-si-ihm/index.html'">
+        <i class="fas fa-arrow-left"></i> Voltar à página anterior</button>
         <section>
 
             <h1 class="titulo">Interface Homem Máquina</h1>
@@ -56,13 +61,13 @@
         </section>
 
         <button class="btn btn-outline-primary" onclick="login()">
-        Entrar na discussão</button>
+        Entrar na discussão <i class="fas fa-door-open btn-bottom"></i></button>
 
         <script type="text/javascript">
             function login(){
                 Swal.fire({
                     title: 'Tarefa Indisponível',
-                    text: 'Esta tarefa só esta disponível para quem tem login',
+                    text: 'Esta tarefa só está disponível para quem tem login',
                     showCancelButton: true,
                     confirmButtonText: `Entrar`,
                     cancelButtonText: `Continuar assim`,
