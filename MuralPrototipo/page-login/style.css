@@ -12,8 +12,13 @@ html {
     margin-left: 500px;
 }
 .div-login-aluno{
+    margin-top: 40px;
     float: left;
 }
 .div-login-professor{
+    margin-top: 40px;
     float: right;
 }
+/* .div-login-admin{
+    margin: 40px 43%;
+} */

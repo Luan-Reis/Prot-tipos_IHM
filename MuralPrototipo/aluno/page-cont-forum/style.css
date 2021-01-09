@@ -10,9 +10,13 @@ html {
 }
 .btn-disc {
     width: 30%;
+}
+.btn-edit{
+    display: inline-block;
+    margin-left: 400px;
+    width: 80%;
     font-size: 24px;
     margin-top: 10px;
-    margin-left: 400px;
 }
 table{
     border-collapse: collapse;

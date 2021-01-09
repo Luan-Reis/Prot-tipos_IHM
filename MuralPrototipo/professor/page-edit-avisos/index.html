@@ -15,12 +15,13 @@
         crossorigin="anonymous">
 
         <script type="text/javascript" src="script.js"></script>
+
     </head>
     <body>
         <header>
             <nav class="navbar navbar-light bg-light">
                 <div class="container-fluid">
-                    <a href="#">Perfil</a>
+                    <a href="../page-perfil/index.html">Perfil</a>
                   <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Pesquisar</button>
@@ -28,6 +29,10 @@
                 </div>
               </nav>
         </header>
+
+        <button type="button" class="btn btn-success btn-back"
+        onclick="window.location.href='../page-prof-ihm/index.html'">Voltar à página anterior</button>
+
         <section class="sec-form">
             <h1 class="titulo">Editar Aviso</h1>
             <div class="form-disc">
@@ -45,12 +50,12 @@
                         rows="3">Fazer atividade... </textarea>
                     </div>
                 </div>
-                <div class="mb-3 row">
+                <!-- <div class="mb-3 row">
                     <label for="formFile" class="col-sm-2 col-form-label">Selecionar Arquivo:</label>
                     <div class="col-sm-10">
                         <input class="form-control" type="file" id="formFile">
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <div class="btn-edit">
@@ -58,7 +63,6 @@
             onclick="excluir()">Excluir Aviso</button>
             <button type="button" class="btn btn-success btn-disc"
             onclick="incluir()">Alterar Aviso</button>
-        </div>
-        
+        </div>        
     </body>
 </html>

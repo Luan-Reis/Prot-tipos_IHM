@@ -1,6 +1,10 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+.btn-back{
+    margin: 10px 5px;
+    width: auto;
+}
 .titulo{
     text-align: center;
     font-size: 64px;

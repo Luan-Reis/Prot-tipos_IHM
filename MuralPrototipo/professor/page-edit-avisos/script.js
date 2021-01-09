@@ -18,6 +18,6 @@ function incluir(){
 }
 
 function excluir(){
-    alert('Aviso Excluído...( ͡❛ ͜ʖ ͡❛)...')
+    alert('Aviso Excluído....')
     window.location.href='../page-prof-ihm/index.html'
 }

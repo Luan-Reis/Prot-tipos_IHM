@@ -11,9 +11,13 @@ html {
 .form-disc{
     margin: 0 200px;
 }
-.btn-disc{
+.btn-disc {
     width: 30%;
+}
+.btn-edit{
+    display: inline-block;
+    margin-left: 450px;
+    width: 80%;
     font-size: 24px;
     margin-top: 10px;
-    margin-left: 500px;
 }
