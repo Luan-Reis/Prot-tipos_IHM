@@ -22,3 +22,9 @@ html {
 /* .div-login-admin{
     margin: 40px 43%;
 } */
+.anc-esq{
+    float: left;
+}
+.anc-dir{
+    float: right;
+}
