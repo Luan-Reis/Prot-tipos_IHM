@@ -28,3 +28,9 @@ button{
 .sec-form{
     margin: 30px 200px;
 }
+a:link {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
