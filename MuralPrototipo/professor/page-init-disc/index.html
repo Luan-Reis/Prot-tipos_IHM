@@ -59,16 +59,30 @@
                     }
                     else{
                         Swal.fire({
-                            position: 'top',
-                            icon: 'success',
-                            title: 'Discussão Incluída',
-                            showConfirmButton: false,
-                            timer: 1000
-                            })
-                        function abrirPag(){
-                            window.location.href='../page-prof-ihm/index.html'
-                        }
-                        setTimeout(abrirPag, 1000)
+                            title: 'Você tem certeza?',
+                            text: "Você está prestes a incluir a Discussão: "
+                            + area1,
+                            icon: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#3085d6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'Sim, incluir!',
+                            cancelButtonText: 'cancelar'
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    Swal.fire({
+                                    position: 'top',
+                                    icon: 'success',
+                                    title: 'Discussão incluída',
+                                    showConfirmButton: false,
+                                    timer: 1000
+                                })
+                                function abrirPag(){
+                                    window.location.href='../page-prof-ihm/index.html'
+                                }
+                                setTimeout(abrirPag, 1000)
+                            }
+                        })
                     }
                 }
             }

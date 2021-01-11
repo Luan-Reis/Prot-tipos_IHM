@@ -81,16 +81,29 @@
                 }
                 else{
                     Swal.fire({
-                            position: 'top',
-                            icon: 'success',
-                            title: 'Mensagem Incluída na Discussão',
-                            showConfirmButton: false,
-                            timer: 1000
-                            })
-                        function abrirPag(){
-                            window.location.href='../page-si-ihm-disc/index.html'
-                        }
-                        setTimeout(abrirPag, 1000)
+                        title: 'Você tem certeza?',
+                        text: "Esta mensagem será inserida na discussão: " +area1,
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Sim, inserir!',
+                        cancelButtonText: 'cancelar'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                Swal.fire({
+                                position: 'top',
+                                icon: 'success',
+                                title: 'Mensagem inserida',
+                                showConfirmButton: false,
+                                timer: 1000
+                                })
+                                function abrirPag(){
+                                    window.location.href='../page-si-ihm-disc/index.html'
+                                }
+                                setTimeout(abrirPag, 1000)
+                            }
+                        })
                 }
             }
         </script>

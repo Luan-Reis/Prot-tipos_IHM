@@ -14,6 +14,8 @@
         rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
         crossorigin="anonymous">
 
+        <script src="../../sweetalert/sweetalert.js"></script>
+
         <script src="https://kit.fontawesome.com/eb0007fc1a.js" crossorigin="anonymous"></script>
 
     </head>
@@ -26,6 +28,8 @@
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">
                         <i class="fas fa-search"></i> Pesquisar</button>
+                    <button class="btn btn-outline-success btn-infor" type="button" 
+                        onclick="help()"><i class="fas fa-info"></i></button>
                   </form>
                 </div>
               </nav>
@@ -158,5 +162,38 @@
             <br>
         </section>
         
+        <script type="text/javascript">
+            function help(){
+                Swal.mixin({
+                    confirmButton: 'btn btn-success',
+                    confirmButtonText: 'Próximo &rarr;',
+                    showCancelButton: true,
+                    cancelButtonText: 'Fechar',
+                    progressSteps: ['1', '2', '3', '4', '5']
+                    }).queue([
+                    {
+                        text: 'Este botão abre uma página para que o usuário logado possa incluir um novo Aviso.',
+                        imageUrl: '../../img/botao-init-aviso-prof.png'
+                    },
+                    {
+                        text: 'Este botão abre uma página com todas as Discussões e Mensagens do usuário logado.',
+                        imageUrl: '../../img/botao-minhas-disc-prof.png'
+                    },
+                    {
+                        text: 'Este botão abre uma página para que o usuário logado possa iniciar uma nova Discussão no forum.',
+                        imageUrl: '../../img/botao-init-disc-prof.png'
+                    },
+                    {
+                        title: 'Tabela avisos',
+                        text: 'Nesta tabela, pode-se clicar no título de um Aviso inserido para ver mais sobre este aviso, podendo editá-lo e/ou excluí-lo.'
+                    },
+                    {
+                        title: 'Tabela Discussões',
+                        text: 'Nesta tabela, pode-se clicar no título de uma Discussão inserida para ver mais sobre esta Discussão.'
+                    }
+                    ])
+            }
+        </script>
+
     </body>
 </html>
